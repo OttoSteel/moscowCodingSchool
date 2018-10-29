@@ -1,0 +1,15 @@
+console.log('You are at ' + window.location);
+const bodyTag = document.querySelector('body');
+const bodyColor = prompt( "Какой будет фон у страницы?");
+bodyTag.style['background-color'] = bodyColor;
+const pageSelector = document.querySelector('.page');
+const pageTextColor = prompt("Какой будет цвет текста на странице?");
+pageSelector.style['color'] = pageTextColor;
+const nameClass = document.querySelector('.name');
+console.log(nameClass);
+nameClass.innerHTML = prompt("Как зовут человека, который вас вдохновляет");
+const image = document.querySelector('img');
+image.setAttribute('src', prompt("Введите адрес картинки"));
+const bio = document.querySelector('.shortBio');
+bio.innerHTML = prompt("Введите текст страницы");
+bio.className += ' animated';
